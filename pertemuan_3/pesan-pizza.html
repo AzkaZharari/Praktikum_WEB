@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Pizza</title>
+</head>
+<body style="background-color: lightgrey;">
+    
+    <h2>Black Goose Bistro | Pizza-On-Demand</h2>
+    <p>
+        Our 12"wood-fired pizzas are available free delivery. Build our custom pizza and we'll deliver it within an hour. 
+    </p>
+    <hr>
+
+    <form action="thankyou.html" target="_blank">
+    <table>
+        <tr>
+            <td colspan="3">
+                <h3 align="center">Your Information</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Name">Name</label>
+            </td>
+            <td>:</td>
+            <td>
+                <input type="text" id="Name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="address">Address</label>
+            </td>
+            <td>:</td>
+            <td>
+                <input type="text" id="address">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="phone">No. Handphone</label>
+            </td>
+            <td>:</td>
+            <td>
+                <input type="number" id="phone">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Email</label>
+            </td>
+            <td>:</td>
+            <td>
+                <input type="email" id="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="instruction">Delivery Instruction</label>
+            </td>
+            <td>:</td>
+            <td>
+                <textarea id="instruction" cols="21" rows="5"></textarea>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <fieldset>
+        <legend><b>Design Your Dream Pizza</b></legend>
+        <br>
+        <p><b>Crust ( Choose One ):</b></p>
+        <div>
+            <input type="radio" id="classicwhite" name="crust">
+            <label for="classicwhite">Classic White</label>
+        </div>
+        <div>
+            <input type="radio" id="multigrain" name="crust">
+            <label for="multigrain">Multigrain</label>
+        </div>
+        <div>
+            <input type="radio" id="unamelt" name="crust">
+            <label for="unamelt">Una Melt</label>
+        </div>
+        <div>
+            <input type="radio" id="cheesygalore" name="crust">
+            <label for="cheesygalore">Cheesy Galore</label>
+        </div>
+        <div>
+            <input type="radio" id="meatlovers" name="crust">
+            <label for="meatlovers">Meat Lovers</label>
+        </div>
+        <br>
+        <p><b>Topping ( Choose as many as you want ):</b></p>
+        <div>
+            <input type="checkbox" id="whitesauce" name="topping">
+            <label for="whitesauce">White Sauce</label>
+        </div>
+        <div>
+            <input type="checkbox" id="mozarellacheese" name="topping">
+            <label for="mozarellacheese">Mozarella Cheese</label>
+        </div>
+        <div>
+            <input type="checkbox" id="pepprerani" name="topping">
+            <label for="pepprerani">Pepprerani</label>
+        </div>
+        <div>
+            <input type="checkbox" id="mushrooms" name="topping">
+            <label for="mushrooms">Mushrooms</label>
+        </div>
+        <div>
+            <input type="checkbox" id="peppers" name="topping">
+            <label for="peppers">Peppers</label>
+        </div>
+        <div>
+            <input type="checkbox" id="anchories" name="topping">
+            <label for="anchories">Anchories</label>
+        </div>
+        <div>
+            <input type="checkbox" id="pineapple" name="topping">
+            <label for="pineapple">Pineapple</label>
+        </div>
+        <br>
+        <p><b>Number :</b></p>
+        <label for="numberofpizzas">How Many Pizzas :</label>
+        <input type="number" id="numberofpizzas">
+        <br><br>
+        <input type="submit" value="Bring Me A Pizza">
+        <input type="reset" value="reset">
+    </fieldset>
+    </form>
+</body>
+</html>
